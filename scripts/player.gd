@@ -2,9 +2,9 @@ extends CharacterBody2D
 
 #var velocity = Vector2.ZERO
 var acceleration = Vector2.ZERO
-var speed = 500
-const MAXSPEED_X = 500
-const MAXSPEED_Y = 500
+var speed = 100
+const MAXSPEED_X = 100
+const MAXSPEED_Y = 100
 
 #func _process(delta: float) -> void:
 

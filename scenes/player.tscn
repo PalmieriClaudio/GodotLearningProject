@@ -13,9 +13,10 @@ script = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 material = SubResource("CanvasItemMaterial_g2els")
-position = Vector2(22, 21)
+position = Vector2(8, 8)
+scale = Vector2(0.4, 0.4)
 shape = SubResource("CircleShape2D_qhqgy")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 16.0
+offset_bottom = 16.0
