@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bamuij8bgu4lf"]
+
+[ext_resource type="Script" uid="uid://jx1px10hdnh8" path="res://scripts/patternSystem.gd" id="1_wx5aq"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_wx5aq")

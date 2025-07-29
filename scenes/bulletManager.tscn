@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgf63ermufh5b"]
+
+[ext_resource type="Script" uid="uid://daslvsftrov5f" path="res://scripts/bulletmanager.gd" id="1_ed8je"]
+[ext_resource type="PackedScene" uid="uid://cl27qcsgxhdt0" path="res://scenes/bullet.tscn" id="2_1li75"]
+
+[node name="BulletManager" type="Node"]
+script = ExtResource("1_ed8je")
+bullet_scene = ExtResource("2_1li75")

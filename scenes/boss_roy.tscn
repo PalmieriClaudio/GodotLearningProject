@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b21i3p57n27wr"]
 
-[ext_resource type="Texture2D" uid="uid://dx4jy8exgoa3g" path="res://assets/ModifiedAssets/tilemap.png" id="1_ixfda"]
+[ext_resource type="Texture2D" uid="uid://dx4jy8exgoa3g" path="res://assets/kenney_tiny-dungeon/ModifiedAssets/tilemap.png" id="1_ixfda"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kmrnc"]
 atlas = ExtResource("1_ixfda")

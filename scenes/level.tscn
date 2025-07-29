@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=4 uid="uid://xq0vir5t0m4j"]
+[gd_scene load_steps=14 format=4 uid="uid://xq0vir5t0m4j"]
 
 [ext_resource type="PackedScene" uid="uid://mhhfs35g8swa" path="res://scenes/player.tscn" id="1_2q6dc"]
+[ext_resource type="PackedScene" uid="uid://bgf63ermufh5b" path="res://scenes/bulletManager.tscn" id="1_ppgk2"]
 [ext_resource type="Texture2D" uid="uid://cjmo08pu4auta" path="res://assets/kenney_tiny-dungeon/Tilemap/tilemap.png" id="2_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://b21i3p57n27wr" path="res://scenes/boss_roy.tscn" id="3_mx8sn"]
-[ext_resource type="Texture2D" uid="uid://dx4jy8exgoa3g" path="res://assets/ModifiedAssets/tilemap.png" id="3_w8frs"]
+[ext_resource type="Texture2D" uid="uid://dx4jy8exgoa3g" path="res://assets/kenney_tiny-dungeon/ModifiedAssets/tilemap.png" id="3_w8frs"]
+[ext_resource type="Script" uid="uid://cpnvavyb0s21r" path="res://scenes/bossRoy.gd" id="5_2r41h"]
+[ext_resource type="PackedScene" uid="uid://bamuij8bgu4lf" path="res://scenes/PatternSystem.tscn" id="6_b121j"]
+[ext_resource type="Script" uid="uid://cqdryebhunp1y" path="res://scripts/extendedCamera2d.gd" id="7_klq6b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w8frs"]
 texture = ExtResource("2_w7c3h")
@@ -449,6 +453,8 @@ sources/0 = SubResource("TileSetAtlasSource_ppgk2")
 
 [node name="Level" type="Node2D"]
 
+[node name="BulletManager" parent="." instance=ExtResource("1_ppgk2")]
+
 [node name="Layer1" type="TileMapLayer" parent="."]
 texture_filter = 1
 use_parent_material = true
@@ -461,6 +467,9 @@ tile_set = SubResource("TileSet_2r41h")
 
 [node name="Roy" parent="." instance=ExtResource("3_mx8sn")]
 position = Vector2(824, 888)
+script = ExtResource("5_2r41h")
+
+[node name="PatternSystem" parent="Roy" instance=ExtResource("6_b121j")]
 
 [node name="Player" parent="." instance=ExtResource("1_2q6dc")]
 position = Vector2(896, 974)
@@ -469,3 +478,4 @@ position = Vector2(896, 974)
 position = Vector2(19, 21)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
+script = ExtResource("7_klq6b")
